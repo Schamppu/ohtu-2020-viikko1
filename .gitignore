@@ -1,0 +1,4 @@
+// Käsketyt ignoret
+/*.tmp
+/build
+/.gradle
