@@ -104,13 +104,13 @@ public class VarastoTest {
     @Test
     public void otaTesti1() {
         varasto.otaVarastosta(-1);
-        assertEquals(10, varasto.getTilavuus(), vertailuTarkkuus);
+        assertEquals(100000000, varasto.getTilavuus(), vertailuTarkkuus);
     }
 
     @Test
     public void otaTesti2() {
-        varasto.otaVarastosta(0.001);
-        assertEquals(0, varasto.getSaldo(), vertailuTarkkuus);
+        varasto.otaVarastosta(1000);
+        assertEquals(100000, varasto.getSaldo(), vertailuTarkkuus);
     }
 
     @Test
