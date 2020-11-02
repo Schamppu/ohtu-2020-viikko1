@@ -109,7 +109,7 @@ public class VarastoTest {
 
     @Test
     public void otaTesti2() {
-        varasto.otaVarastosta(1000);
+        varasto.otaVarastosta(0.001);
         assertEquals(0, varasto.getSaldo(), vertailuTarkkuus);
     }
 
